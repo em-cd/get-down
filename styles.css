@@ -1,0 +1,346 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
+}
+iframe html, body.app-body {
+  width: auto;
+  height: auto;
+  font-family: 'Oswald', sans-serif;
+}
+body.app-body {
+  width: 100%;
+  height: 100%; 
+  cursor: url('img/touch-cursor-small.png') 15 15, pointer;
+}
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+iframe {
+  width: 340px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+/************** MAIN *****************/
+
+#content {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.content-container {
+  height: 700px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description.hidden {
+  display: none;
+}
+.description {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-top: 60px;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.credits {
+  font-size: 12px;
+  font-weight: normal;
+}
+#show-info {
+  font-size: 1.5em;
+  font-weight: 900;
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  cursor: pointer;
+}
+#show-info:hover {
+  text-decoration: underline;
+}
+#show-info.hide-info {
+  text-decoration: line-through;
+}
+
+
+
+/************** SMARTPHONE *****************/
+
+#smartphone {
+  display: inline-block;
+  position: relative;
+}
+.smartphone-img {
+  width: auto;
+  height: 700px;
+}
+#screen {
+  position: absolute;
+  top: 47px;
+  width: 330px;
+  height: 584px;
+  margin-left: 10px;
+  margin-right: 0px;
+  cursor: url('img/touch-cursor-small.png') 15 15, pointer;
+  overflow: hidden;
+}
+#app {
+  height: 100%;
+  padding-left: 18px;
+  padding-right: 28px;
+  padding-top: 0.1px;
+}
+#hide-scrollbar {
+  display: none;
+  width: 13px;
+  height: 584px;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: 47px;
+  right: 10px;
+  z-index: 999;
+  cursor: url('img/touch-cursor-small.png') 15 15, pointer;
+}
+
+/************** HOMEPAGE ***************/
+
+#title {
+  font-size: 100px;
+  line-height: 100px;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255,140,0,1);
+}
+.hero-unit {
+  color: white;
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+#subheading {
+  font-weight: 400;
+  font-size: 30px;
+}
+#owl {
+  height: 100px;
+}
+.button-wrapper {
+  text-align: center;
+  background: none;
+  padding: 15px;
+  margin-top: 50px;
+  z-index: 1;
+}
+.button, .button:hover {
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+  padding: 10px 20px;
+  background: none;
+  border: 5px solid black;
+  text-align: center;
+  text-decoration: none;
+  cursor: url('img/touch-cursor-small.png') 15 15, pointer;
+}
+.button:active, .button:active:hover {
+  text-decoration: none;
+  color: white;
+  background: black;
+}
+#start {
+  margin-top: 15px;
+}
+
+/************** OPTIONS *****************/
+
+#options {
+  margin-bottom: 30px;
+}
+.option {
+  background: rgba(255,140,0,1);
+  font-size: 25px;
+	text-align: center;
+	color: white;
+  padding: 10px;
+  margin: 4px 0;
+}
+.category {
+	margin: 25px 0 0 0;
+}
+.option-select {
+	background-color: rgba(255,200,0,0.9);
+}
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(121,121,121,0.3);
+  z-index: 10;
+}
+.no-options {
+  position: fixed;
+  z-index: 20;
+  top: 225px;
+  font-size: 1.6em;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 45px;
+}
+.close-dialogue {
+  width: 100%;
+  padding-top: 10px;
+  color: #09f;
+}
+#tell-me, #reset {
+  position: relative;
+  padding-bottom: 86px;
+}
+
+/************** RESULTS *****************/
+
+#results {
+  margin-top: 25px;
+}
+.result {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 23px;
+  color: black;
+  text-align: left;
+  position: relative;
+  height: 290px; 
+  outline: 5px solid black;
+ 	border: 5px solid white;
+  margin-bottom: 20px;
+  background-size: cover;
+  display: none;
+}
+.link, .link:hover {
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 0;
+  color: #d3d3d3;
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  -moz-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+.show-description .link {
+  opacity: 1;
+}
+#reset {
+  display: none;
+}
+.result {
+  height: 270px;
+  color: white;
+  text-align: justify;
+}
+.card {
+  position: absolute;
+  bottom: 0;
+  height: 35px;
+  margin: 0;
+  padding: 10px;
+  background: black;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  transition: height .5s;
+}
+.info {
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility .5s;
+  -moz-transition: opacity .5s, visibility .5s;
+  transition: opacity .5s, visibility .5s;
+}
+.info p {
+  margin: .5em 0;
+}
+.show-description .card {
+  height: 250px;
+}
+.show-description .info {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*! narrower than 900px
+***********************************************/
+@media(max-width: 900px) {
+
+.description {
+  margin-left: 50px;
+}
+
+}
+
+/**************BACKGROUND IMAGES***************/
+
+#bar0 {
+  background-image: url('img/angelicas.jpg');
+}
+#bar1 {
+  background-image: url('img/distrikt.jpg'); 
+}
+#bar2 {
+  background-image: url('img/friendsofham.jpg'); 
+}
+#bar3 {
+  background-image: url('img/hifi.jpg'); 
+}
+#bar4 {
+  background-image: url('img/nation.jpg'); 
+}
+#bar5 {
+  background-image: url('img/oporto.jpg'); 
+}
+#bar6 {
+  background-image: url('img/sela.jpg'); 
+}
+#bar7 {
+  background-image: url('img/smokestack2.jpg'); 
+}
+#bar8 {
+  background-image: url('img/wharf.jpg'); 
+}
