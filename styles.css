@@ -211,7 +211,7 @@ iframe {
 .no-options {
   position: fixed;
   z-index: 20;
-  top: 225px;
+  top: 175px;
   font-size: 1.6em;
   color: #000;
   text-align: center;
@@ -270,7 +270,7 @@ iframe {
 .result {
   height: 270px;
   color: white;
-  text-align: justify;
+  text-align: left;
 }
 .card {
   position: absolute;
