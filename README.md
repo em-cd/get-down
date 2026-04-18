@@ -1,4 +1,3 @@
-# get-down
-web app for recommending bars in Leeds
+# Get Down - Code First: Girls final project 2015
 
-you can check it out at https://getdown.netlify.com/
+An app concept for recommending bars in Leeds, UK. Built in vanilla HTML, CSS and JavaScript.
